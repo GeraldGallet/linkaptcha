@@ -1,4 +1,28 @@
 /* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: #f7fafc; /* Tailwind's gray-100 */
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Ensure body takes full height */
+}
+
+.slick-slider {
+  height: 90vh; /* Set the height of the slider to 90% of the viewport height */
+}
+
+.slick-slide {
+  height: 90vh; /* Set the height of each slide to 90% of the viewport height */
+  display: flex; /* Ensure flex display for proper alignment */
+}
+
+.slick-slide > div {
+  height: 100%; /* Set the height of each slide to 90% of the viewport height */
+}
+
+.slick-list {
+  height: 90vh; /* Ensure the list also takes up 90% of the viewport height */
+}
